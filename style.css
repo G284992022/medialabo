@@ -1,4 +1,14 @@
+body{
+    background: linear-gradient(#a2e3e4, #69f6f8);
+}
 h1{
-    background-color:orange;
+    background-color:rgba(43, 232, 49, 0.751);
+    border-bottom: black;
     color:blue;
+}
+h2{
+    background-color:#ecb309;
+}
+h3{
+    background-color: #40e4b5;
 }
