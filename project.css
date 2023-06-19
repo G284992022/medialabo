@@ -1,0 +1,22 @@
+body{
+    background-color:rgba(242, 157, 23, 0.4);
+}
+strong{
+    font-weight: bold;
+}
+div{
+    background-color: white;
+    /*padding-left: 10px;*/
+}
+catch{
+    font-size: 20px;
+    font-weight: normal;
+}
+li.genre{
+    list-style-type:none;
+    font-size: small;
+
+}
+li.serch{
+    list-style-type: none;
+}
