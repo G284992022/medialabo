@@ -2,13 +2,14 @@ body{
     background: linear-gradient(#a2e3e4, #69f6f8);
 }
 h1{
-    background-color:rgba(43, 232, 49, 0.751);
-    border-bottom: black;
-    color:blue;
+    background-color: none;
+    border-bottom:solid black;
+    color:#dde67c;
+    text-shadow:rgba(18, 18, 255, 0.78) 1px 0 10px;
 }
 h2{
     background-color:#ecb309;
 }
-h3{
-    background-color: #3fa98b;
+div{
+    background-color: #35dd4099;
 }
