@@ -2,14 +2,18 @@ body{
     background: linear-gradient(#a2e3e4, #69f6f8);
 }
 h1{
-    background-color: none;
+    border: black;
     border-bottom:solid black;
-    color:#dde67c;
+    color:#d6ffe0de;
     text-shadow:rgba(18, 18, 255, 0.78) 1px 0 10px;
+    background-color: #dfdfdf;
 }
 h2{
     background-color:#ecb309;
 }
 div{
     background-color: #35dd4099;
+}
+a:hover{
+    text-decoration: none;
 }
