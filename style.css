@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(#a2e3e4, #69f6f8);
+    background: linear-gradient(#a2e3e4, #a1fbfc);
 }
 h1{
     border: black;
@@ -12,7 +12,7 @@ h2{
     background-color:#ecb309;
 }
 div{
-    background-color: #35dd4099;
+    background-color: #ffffffd1;
 }
 a:hover{
     text-decoration: none;
