@@ -1,56 +1,56 @@
 let data = {
-  results: {
-    api_version: "1.26",
-    results_available: 52,
-    results_returned: "10",
-    results_start: 1,
-    shop: [
+  "results": {
+    "api_version": "1.26",
+    "results_available": 52,
+    "results_returned": "10",
+    "results_start": 1,
+    "shop": [
       {
-        access: "京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。",
-        address: "東京都八王子市明神町４-6-12　ホテル・ザ・ビー八王子（旧八王子プラザホテル）2F",
-        band: "可",
-        barrier_free: "なし",
-        budget: {
-          average: "ディナー3000円",
-          code: "B003",
-          name: "3001～4000円"
+        "access": "京王八王子駅を背にし右手に見えるローソンの隣のビル、ホテルザ・ビーの2階です。",
+        "address": "東京都八王子市明神町４-6-12　ホテル・ザ・ビー八王子（旧八王子プラザホテル）2F",
+        "band": "可",
+        "barrier_free": "なし",
+        "budget": {
+          "average": "ディナー3000円",
+          "code": "B003",
+          "name": "3001～4000円"
         },
-        budget_memo: "",
-        capacity: 100,
-        card: "利用可",
-        catch: "【サプライズ演出有】 結婚パーティー受付中",
-        charter: "貸切可 ：VIPルーム1部屋2～15名様前後（完全個室）/パーティーフロア！50型モニター・スポットライト等充実",
-        child: "お子様連れOK",
-        close: "不定休有り。店休時は店長携帯電話09035324825まで問い合わせください♪",
-        coupon_urls: {
-          pc: "https://www.hotpepper.jp/strJ000989843/map/?vos=nhppalsa000016",
-          sp: "https://www.hotpepper.jp/strJ000989843/scoupon/?vos=nhppalsa000016"
+        "budget_memo": "",
+        "capacity": 100,
+        "card": "利用可",
+        "catch": "【サプライズ演出有】 結婚パーティー受付中",
+        "charter": "貸切可 ：VIPルーム1部屋2～15名様前後（完全個室）/パーティーフロア！50型モニター・スポットライト等充実",
+        "child": "お子様連れOK",
+        "close": "不定休有り。店休時は店長携帯電話09035324825まで問い合わせください♪",
+        "coupon_urls": {
+          "pc": "https://www.hotpepper.jp/strJ000989843/map/?vos=nhppalsa000016",
+          "sp": "https://www.hotpepper.jp/strJ000989843/scoupon/?vos=nhppalsa000016"
         },
-        course: "あり",
-        english: "なし",
-        free_drink: "あり",
-        free_food: "なし",
-        genre: {
-          catch: "大人の社交場非日常を味わうダイニング",
-          code: "G001",
-          name: "居酒屋"
+        "course": "あり",
+        "english": "なし",
+        "free_drink": "あり",
+        "free_food": "なし",
+        "genre": {
+          "catch": "大人の社交場非日常を味わうダイニング",
+          "code": "G001",
+          "name": "居酒屋"
         },
-        horigotatsu: "なし",
-        id: "J000989843",
-        karaoke: "あり",
-        ktai_coupon: 0,
-        large_area: {
-          code: "Z011",
-          name: "東京"
+        "horigotatsu": "なし",
+        "id": "J000989843",
+        "karaoke": "あり",
+        "ktai_coupon": 0,
+        "large_area": {
+          "code": "Z011",
+          "name": "東京"
         },
-        large_service_area: {
-          code: "SS10",
-          name: "関東"
+        "large_service_area": {
+          "code": "SS10",
+          "name": "関東"
         },
-        lat: 35.6585460152,
-        lng: 139.34327231,
-        logo_image: "https://imgfp.hotp.jp/IMGH/21/04/P038512104/P038512104_69.jpg",
-        lunch: "なし",
+        "lat": 35.6585460152,
+        "lng": 139.34327231,
+        "logo_image": "https://imgfp.hotp.jp/IMGH/21/04/P038512104/P038512104_69.jpg",
+        "lunch": "なし",
         "middle_area": {
           "code": "Y110",
           "name": "八王子・立川"
