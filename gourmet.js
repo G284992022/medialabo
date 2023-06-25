@@ -210,3 +210,7 @@ for(let n of data.results.shop){
   console.log(n.station_name);
   console.log(n.sub_genre.name);
 }
+let p1 = document.querySelectorAll('li'); 
+for (let n of p1){
+  console.log(n.textContent);
+} 
