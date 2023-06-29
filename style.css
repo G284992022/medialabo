@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(#a2e3e4, #a1fbfc);
+    background: linear-gradient(#c0feff, #a1fbfc);
 }
 h1{
     border: black;
@@ -7,7 +7,7 @@ h1{
     color:#d6ffe0de;
     text-shadow:rgb(32, 100, 7) 1px 0 10px;
     background-color: #dfdfdf;
-    
+
 }
 h2{
     background-color:#14ff00db;
