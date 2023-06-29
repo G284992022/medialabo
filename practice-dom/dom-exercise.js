@@ -45,10 +45,10 @@ for(let n of p2){
 }
 
 // 練習4-5 箇条書き追加プログラム
-let p3 = document.querySelector('ul#location'); 
-let x3 = [{},{},{},{},{},{},{},{},{},{}]; 
-for(let n = 0;n<x3.length;n++){
-	x3[n] = document.createElement('li');
-	x3[n].textContent= data[n].name + ' ... 緯度:' + data[n].lat + ',経度:' + data[n].lng; 
-	p3.insertAdjacentElement('beforeend',x3[n]); 
-  }
+let p3 = document.querySelector('ul#location');
+
+for(let n of data){
+	let x3 = document.createElement('li');
+	x3.textContent=n.name + ' ... 緯度:' + n.lat + ',経度:' + n.lng;
+	p3.insertAdjacentElement('beforeend',x3);
+} 
