@@ -3,14 +3,16 @@ console.log('答え（デバッグ用）: ' + kotae);
 
 // 入力回数（予想回数）
 let kaisu = 0;
-
+let x1 = document.querySelector('p#result');
+let span = document.querySelector('span#kaisu');
+let answer = document.querySelector('span#answer');
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 hantei();
+/*hantei();
 hantei();
-hantei();
-hantei();
+hantei();*/
 
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
@@ -18,23 +20,31 @@ function hantei() {
   let yoso = 4;
   kaisu = kaisu + 1;
   console.log(kaisu + '回目の予想: ' + yoso);
+  span.textContent = kaisu;
+  answer.textContent = yoso;
   if(kaisu>=4){
     console.log("答えは" + kotae + "でした.すでにゲームは終了しています.");
+    x1.textContent="答えは" + kotae + "でした.すでにゲームは終了しています.";
   }
   if(kotae!==yoso){
     if(kaisu===3){
         console.log("まちがい.残念でした答えは" + kotae + "です.");
+        x1.textContent="まちがい.残念でした答えは" + kotae + "です.";
     }else if(kaisu>3){
-        console.log("答えは" +  kotae +  "でした．すでにゲームは終わっています")
+        console.log("答えは" +  kotae +  "でした．すでにゲームは終わっています");
+        x1.textContent="答えは" +  kotae +  "でした．すでにゲームは終わっています";
     }else{
         if(kotae>yoso){
             console.log("まちがい．答えはもっと大きいですよ");
+            x1.textContent="まちがい．答えはもっと大きいですよ";
         }else if(kotae<yoso){
             console.log("まちがい．答えはもっと小さいですよ");
+            x1.textContent="まちがい．答えはもっと少ないですよ";
         }
     }
   }else if(kotae===yoso){
     console.log("正解です．おめでとう!");
+    x1.textContent="正解です．おめでとう!";
   }
   
   // 課題3-1: 正解判定する
