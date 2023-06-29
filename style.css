@@ -5,11 +5,19 @@ h1{
     border: black;
     border-bottom:solid black;
     color:#d6ffe0de;
-    text-shadow:rgba(18, 18, 255, 0.78) 1px 0 10px;
+    text-shadow:rgb(32, 100, 7) 1px 0 10px;
     background-color: #dfdfdf;
 }
 h2{
-    background-color:#ecb309;
+    background-color:#14ff00db;
+}
+h3{
+    background-color: #3eb7ffcf;
+}
+div.title{
+    background-color: #fff0;
+    padding-right: 900px;
+    
 }
 div{
     background-color: #ffffffd1;
