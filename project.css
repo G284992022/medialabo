@@ -17,10 +17,11 @@ div{
     background-color: rgba(255, 232, 112, 0.64);
     /*padding-left: 10px;*/
 }
-catch{
+li#catch{
     color: blue;
     font-size: 20px;
     font-weight: normal;
+    list-style-type: none;
 }
 li.genre{
     list-style-type:none;
