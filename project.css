@@ -23,12 +23,12 @@ li#catch{
     font-weight: normal;
     list-style-type: none;
 }
-li.genre{
+li#genre{
     list-style-type:none;
     font-size: small;
 
 }
-li.serch{
+li#serch{
     list-style-type: none;
     border-bottom: 1px solid black;
 }

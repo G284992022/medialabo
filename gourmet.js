@@ -200,7 +200,9 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こう
-let p2 = document.querySelector('div#result');
+let p1 = document.querySelector('div#result');
+let p2 = document.createElement('div');
+p2.id = 'zentai';
 let div = document.createElement('div');
 let dl = document.createElement('dl');
 let ul = document.createElement('ul');
@@ -208,15 +210,8 @@ let dt = document.createElement('dt');
 let dd = document.createElement('dd');
 let li = document.createElement('li');
 let strong = document.createElement('strong');
-p2.style.display = 'grid'; 
-p2.style.gridTemplateColumns = '1fr 1fr';
-p2.style.gridAutoRows ='320px';
-p2.style.gridGap ='20px';
-p2.style.width ='1200px';
-p2.style.backgroundColor='white';
-div.style.backgroundColor='rgba(255, 232, 112, 0.64)';
-li.style.listStyleType='none';
-li.style.borderBottom='1px solid black'
+p1.insertAdjacentElement('beforeend',p2);
+li.id='serch';
 p2.insertAdjacentElement('beforeend',div);
 div.insertAdjacentElement('beforeend',dl);
 dl.insertAdjacentElement('beforeend',ul);
@@ -225,17 +220,14 @@ li.textContent='検索結果1件目';
 dt.insertAdjacentElement('beforeend',li);
 dd = document.createElement('dd');
 li = document.createElement('li');
-li.style.fontSize='small';
+li.id='genre';
 ul.insertAdjacentElement('beforeend',dd);
-li.style.listStyleType='none';
 li.textContent=data.results.shop[0].genre.name;
 dd.insertAdjacentElement('beforeend',li);
 dd = document.createElement('dd');
 li = document.createElement('li');
-li.style.fontSize='20px';
-li.style.color='blue';
+li.id='catch';
 ul.insertAdjacentElement('beforeend',dd);
-li.style.listStyleType='none';
 li.textContent=data.results.shop[0].catch;
 dd.insertAdjacentElement('beforeend',li); 
 li=document.createElement('li');
@@ -281,9 +273,7 @@ ul = document.createElement('ul');
 dt = document.createElement('dt');
 dd = document.createElement('dd');
 li = document.createElement('li');
-div.style.backgroundColor='rgba(255, 232, 112, 0.64)';
-li.style.listStyleType='none';
-li.style.borderBottom='1px solid black'
+li.id='serch';
 p2.insertAdjacentElement('beforeend',div);
 div.insertAdjacentElement('beforeend',dl);
 dl.insertAdjacentElement('beforeend',ul);
@@ -292,17 +282,14 @@ li.textContent='検索結果2件目';
 dt.insertAdjacentElement('beforeend',li);
 dd = document.createElement('dd');
 li = document.createElement('li');
-li.style.fontSize='small';
+li.id='genre';
 ul.insertAdjacentElement('beforeend',dd);
-li.style.listStyleType='none';
 li.textContent=data.results.shop[1].genre.name;
 dd.insertAdjacentElement('beforeend',li);
 dd = document.createElement('dd');
 li = document.createElement('li');
-li.style.fontSize='20px';
-li.style.color='blue';
+li.id='catch';
 ul.insertAdjacentElement('beforeend',dd);
-li.style.listStyleType='none';
 li.textContent=data.results.shop[1].catch;
 dd.insertAdjacentElement('beforeend',li); 
 li=document.createElement('li');
@@ -351,7 +338,7 @@ for(let n of data.results.shop){
   console.log(n.station_name);
   console.log(n.sub_genre.name);
 }
-let p1 = document.querySelectorAll('li');
+p1 = document.querySelectorAll('li');
 /*console.log(p1);
 for (let n of p1){
   console.log(n.textContent);
