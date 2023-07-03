@@ -2,7 +2,6 @@ body{
     background: linear-gradient(#c0feff, #a1fbfc);
 }
 h1{
-    border: black;
     border-bottom:solid black;
     color:#f0fff2de;
     text-shadow:rgb(40, 106, 16) 1px 0 10px;
