@@ -200,10 +200,12 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こう
+function print(){
 let p1 = document.querySelector('div#result');
 let p2 = document.createElement('div');
 p2.id = 'zentai';
 let div = document.createElement('div');
+div.id="search";
 let dl = document.createElement('dl');
 let ul = document.createElement('ul');
 let dt = document.createElement('dt');
@@ -268,6 +270,7 @@ dd.insertAdjacentElement('beforeend',li);
 li.insertAdjacentElement('afterbegin',strong);
 
 div = document.createElement('div');
+div.id="search";
 dl = document.createElement('dl');
 ul = document.createElement('ul');
 dt = document.createElement('dt');
@@ -328,6 +331,7 @@ strong.textContent='サブジャンル';
 li.textContent=':' + data.results.shop[1].sub_genre.name;
 dd.insertAdjacentElement('beforeend',li); 
 li.insertAdjacentElement('afterbegin',strong);
+}
 for(let n of data.results.shop){
   console.log(n.access);
   console.log(n.address);
@@ -338,10 +342,39 @@ for(let n of data.results.shop){
   console.log(n.station_name);
   console.log(n.sub_genre.name);
 }
-p1 = document.querySelectorAll('li');
-/*console.log(p1);
-for (let n of p1){
-  console.log(n.textContent);
-  p3 = document.createElement('li');
-  p2.insertAdjacentElement('beforeend',n);
-} */
+let abc = document.querySelector('button#print');
+abc.addEventListener('click', test);
+function test(){
+  let cs = document.querySelectorAll('input[name="youso"]');
+  print();
+  for(let r of data.results.shop){
+    for (let c of cs) {
+      if (c.checked) {
+        if(c.value==="genre"){
+          console.log(r.genre.name);
+        }
+        if(c.value==="catch"){
+          console.log(r.catch);
+        }
+        if(c.value==="budget"){
+          console.log(r.budget.name);
+        }
+        if(c.value==="open"){
+          console.log(r.open);
+        }
+        if(c.value==="station"){
+          console.log(r.station_name);
+        }
+        if(c.value==="access"){
+          console.log(r.access);
+        }
+        if(c.value==="address"){
+          console.log(r.address);
+        }
+        if(c.value==="sub"){
+          console.log(r.sub_genre.name);
+        }
+      }
+    }
+  }
+}
