@@ -7,24 +7,26 @@
   </head>
   <body>
     <h1>「Webコンテンツ作成」の成果</h1>
-    <h2>本テーマの学習目的</h2><ul>
+    <h2>本テーマの学習目的</h2><div><ul>
     <li>HTML等を用いてWebページの構造の記述、見た目の設定、インタラクティブな処理の記述の3点を行う基本的な方法を理解する。</li>
     <li>HTML, CSS, JavaScriptの構文リファレンスから、構文の書式や使用方法の情報を入手する。</li>
     <li>HTML, CSS, JavaScript,画像・音声・動画ファイルを用いて簡単なWebページを作成する。 </li>
-   </ul>
+   </ul></div>
     <h2>プロジェクト課題について</h2>
-    <p>プロジェクト課題では、グルメ情報について表示する。
+    <div><p>プロジェクト課題では、グルメ情報について表示する。
     </p>
-    <p>プロジェクト課題で作成したページ:<a href="https://g284992022.github.io/medialabo/project.html" title="プロジェクト課題 グルメ" target="_blank">project.html</a></p>
+    <p>プロジェクト課題で作成したページ:<a href="https://g284992022.github.io/medialabo/project.html" title="プロジェクト課題 グルメ" target="_blank">project.html</a></p></div>
     <h2>数当てゲーム</h2>
-    <p> Math.random()を使用し、1~10の範囲で乱数を1つ生成し「答え」とする。最大3回答えを予想して値を入力し、「○回目の予想:予想した値」とコンソールで出力する。予想した値と答えが異なる場合、
+    <div><p> Math.random()を使用し、1~10の範囲で乱数を1つ生成し「答え」とする。最大3回答えを予想して値を入力し、「○回目の予想:予想した値」とコンソールで出力する。予想した値と答えが異なる場合、
       予想と答えを比較して大きいか小さいかをコンソールで表示する。
       <br>DOMを利用してJavaScriptから、コンソールに表示されている予想と結果のメッセージを、予想の回数毎にページに表示されるようにする。HTMLに事前に設定されている要素から、予想の回数・予想した値・出力結果をそれぞれ"span#kaisu"・"span#answer"
       ・"p#result"に設定する。
+      <br>ボタンを押すとテキストボックスに入力された数字が、予想として答えとの比較が行われる。テキストボックスに文字を入力したら比較は行われない。予想が3回目で不正解の場合は、答えを表示する。予想が4回以上の場合は、ゲームが終了していることを
+      表示する。
     </p>
     <p>数当てゲームのページ:
     <a href="https://g284992022.github.io/medialabo/kazuate.html" 
-    title="数当てゲーム" target="blank">kazuate.html</a></p>
+    title="数当てゲーム" target="blank">kazuate.html</a></p></div>
     <h2>毎回の実験で作成したページ</h2>
     <div><div class="content"><h3>第1回WWW と HTML</h3></div class="content">
     <p>第1回では次のWWWとHTMLについて学んだ。HTMLで文書を作成する際には要素を用いる。要素はタグで囲まれた部分のことであり、
@@ -76,7 +78,18 @@
     </ul>
     </div>
     <div><div class="content"><h3>第5回 イベント処理</h3></div class="content">
-    <p></p>
+    <p>第5回では、イベント処理について学んだ。検索した要素に指定したイベントが行われると、特定の関数の内容が実行される。
+      イベントの種類は、クリック,マウスポインタを要素の上で動かす・離す,キーボードのキーを押す・離すなど多くの種類がある。
+      尚イベントの中には、要素をフォーカスしなければ動作しないものもある。
+      <br>JavaScriptでイベントを設定するには、"検索した要素.addEventListener('イベントの種類', 実行する関数)"という構文を使用する。
+    </p>
+    <p>演習の成果</p>
+    <ul>
+      <li><a href="https://g284992022.github.io/medialabo/practice-event/event-intro.html"
+      title="演習5-2" target="_blank">演習5-2:イベント処理の確認</a></li>
+      <li><a href="https://g284992022.github.io/medialabo/practice-event/event-list.html"
+        title="演習5-3" target="_blank">演習5-3:イベント選択</a></li>
+    </ul>
     </div>
   </body>
 </html>
