@@ -35,3 +35,6 @@ li#shop{
     list-style-type: none;
     color: blue;
 }
+img{
+    float: right;
+}

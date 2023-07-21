@@ -246,6 +246,9 @@ function showResult(resp){
     ul.insertAdjacentElement('beforeend',dt);
     li.textContent='検索結果' + shop + '件目';
     dt.insertAdjacentElement('beforeend',li);
+    let logo = document.createElement('img');
+    logo.src=r.logo_image;
+    div.insertAdjacentElement('afterbegin',logo);
     dd = document.createElement('dd');
     li = document.createElement('li');
     li.id='genre';
@@ -267,7 +270,11 @@ function showResult(resp){
     li = document.createElement('li');
     li.id='catch';
     ul.insertAdjacentElement('beforeend',dd);
+    if(r.catch!==""){
     li.textContent=r.catch;
+    }else{
+      li.textContent=r.genre.catch;
+    }
     dd.insertAdjacentElement('beforeend',li); 
     li=document.createElement('li');
     strong = document.createElement('strong');
@@ -306,9 +313,9 @@ function showResult(resp){
      li.textContent=':';  
     }else{
       li.textContent=':' + r.sub_genre.name;
+      dd.insertAdjacentElement('beforeend',li); 
+      li.insertAdjacentElement('afterbegin',strong);
     }
-    dd.insertAdjacentElement('beforeend',li); 
-    li.insertAdjacentElement('afterbegin',strong);
   }  
 }
 // 通信エラーが発生した時の処理
@@ -320,7 +327,7 @@ function showError(err) {
 function finish() {
   console.log('Ajax 通信が終わりました');
 }
-for(let n of data.results.shop){
+/*for(let n of data.results.shop){
   console.log(n.access);
   console.log(n.address);
   console.log(n.budget.name);
@@ -363,4 +370,4 @@ function test(){
       }
     }
   }
-}
+}*/
