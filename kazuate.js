@@ -8,18 +8,18 @@ let span = document.querySelector('span#kaisu');
 let answer = document.querySelector('span#answer');
 let b1 = document.querySelector('button#answer');
 b1.addEventListener('click', kaisuup);
-let yoso;
+//let yoso;
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 function kaisuup(){
   kaisu = kaisu + 1;
-  let i = document.querySelector('input[name="yoso"]');
-	yoso = Number(i.value);
   hantei();
 }
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
+  let i = document.querySelector('input[name="yoso"]');
+	let yoso = Number(i.value);
   // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
   let p = document.querySelector('p');
   span.textContent = kaisu;
