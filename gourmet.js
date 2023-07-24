@@ -204,12 +204,11 @@ let abc = document.querySelector('button#print');
 abc.addEventListener('click',send);
 let genre;
 function send(){
-let no = document.querySelectorAll('input[name="genre"]');
-for(let n of no){
-  if(n.checked){
-    genre = n.value;
-  }
-}
+let s = document.querySelector('select#Gno');
+let idx = s.selectedIndex; 
+let no = document.querySelectorAll('option');
+let gno = no.item(idx);
+genre = gno.getAttribute('value');
 let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/' + genre + '.json';
     // 通信開始
     axios.get(url)
